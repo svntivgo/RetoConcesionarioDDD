@@ -14,7 +14,7 @@ public class AdminAniadido extends DomainEvent
     private final Email email;
 
     public AdminAniadido( AdministradorId administradorId, Nombre nombre, Identificacion identificacion, Email email) {
-        super("RetConcesionarioDDD.AdminAniadido");
+        super("RetoConcesionarioDDD.AdminAniadido");
         this.administradorId = administradorId;
         this.nombre = nombre;
         this.identificacion = identificacion;

@@ -8,7 +8,7 @@ public class AdminEliminado extends DomainEvent
     private final AdministradorId administradorId;
 
     public AdminEliminado(AdministradorId administradorId){
-        super("RopaDeportiva.AdminEliminado");
+        super("RetoConcesionarioDDD.AdminEliminado");
         this.administradorId = administradorId;
 
     }
