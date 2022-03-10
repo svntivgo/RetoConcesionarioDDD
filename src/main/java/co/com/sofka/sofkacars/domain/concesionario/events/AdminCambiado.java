@@ -6,15 +6,16 @@ import co.com.sofka.sofkacars.domain.concesionario.valueobjects.Email;
 import co.com.sofka.sofkacars.generics.Identificacion;
 import co.com.sofka.sofkacars.generics.Nombre;
 
-public class AdminAniadido extends DomainEvent
+public class AdminCambiado extends DomainEvent
 {
+
     private final AdministradorId administradorId;
     private final Nombre nombre;
     private final Identificacion identificacion;
     private final Email email;
 
-    public AdminAniadido( AdministradorId administradorId, Nombre nombre, Identificacion identificacion, Email email) {
-        super("RetConcesionarioDDD.AdminAniadido");
+    public AdminCambiado( AdministradorId administradorId, Nombre nombre, Identificacion identificacion, Email email) {
+        super("RetConcesionarioDDD.AdminCambiado");
         this.administradorId = administradorId;
         this.nombre = nombre;
         this.identificacion = identificacion;

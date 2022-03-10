@@ -1,8 +1,6 @@
 
 |
 Lsrc/main/java/co/com/sofka/sofkacars/domain/concesionario/Concesionario.java,c\0\c0d99f4e1c179708836963d1df1e44ab9d6f53d9
-Ç
-Rsrc/main/java/co/com/sofka/sofkacars/domain/concesionario/ids/AdministradorId.java,e\b\ebc5380b6bd6d7fa3ba8f71d1432c94a1e0147ef
 Å
 Qsrc/main/java/co/com/sofka/sofkacars/domain/concesionario/valueobjects/Marca.java,1\4\1479e217bba2e34786967604efbb669e88efdd0c
 {
