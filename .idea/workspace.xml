@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49e05ee2-39b6-41bf-ac9e-196c6042b2fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/1/1/110a155b3f380e060f061114bec99ccb0a4032ee" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/5/558feeb64a541cea39556cbd89c7ddbb3796f672" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/usecase/concesionario/CrearConcesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/usecase/concesionario/CrearConcesionarioUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/com/sofka/sofkacars/domain/concesionario/ids/AsesorId.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/co/com/sofka/sofkacars/domain/concesionario/ids/AsesorId.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/co/com/sofka/sofkacars/domain/concesionario/main.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -37,11 +39,21 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="co.com.sofka.sofkacars.usecase.concesionario" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AniadirAsesorUseCaseTest.crearConcesionario">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="co.com.sofka.sofkacars.domain.concesionario.main" />
       <module name="RetoConcesionarioDDD" />
@@ -55,8 +67,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AniadirAsesorUseCaseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RetoConcesionarioDDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.com.sofka.sofkacars.usecase.concesionario.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.com.sofka.sofkacars.usecase.concesionario" />
+      <option name="MAIN_CLASS_NAME" value="co.com.sofka.sofkacars.usecase.concesionario.AniadirAsesorUseCaseTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AniadirAsesorUseCaseTest.crearConcesionario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RetoConcesionarioDDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.com.sofka.sofkacars.usecase.concesionario.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="co.com.sofka.sofkacars.usecase.concesionario" />
+      <option name="MAIN_CLASS_NAME" value="co.com.sofka.sofkacars.usecase.concesionario.AniadirAsesorUseCaseTest" />
+      <option name="METHOD_NAME" value="crearConcesionario" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AniadirAsesorUseCaseTest.crearConcesionario" />
+        <item itemvalue="JUnit.AniadirAsesorUseCaseTest" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
