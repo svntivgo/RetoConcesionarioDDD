@@ -2,7 +2,9 @@ package co.com.sofka.sofkacars.domain.concesionario.valueobjects;
 
 import co.com.sofka.domain.generic.ValueObject;
 
+import java.time.LocalDate;
 import java.util.Date;
+import java.util.Objects;
 
 public class Modelo implements ValueObject<Modelo.Properties> {
 
@@ -10,7 +12,12 @@ public class Modelo implements ValueObject<Modelo.Properties> {
 
     //Constructor
     public Modelo(Date modelo) {
-        this.modelo = modelo;
+        if (modelo.getYear()<LocalDate.now().getYear())
+        {
+            this.modelo = modelo;
+        }
+        else {throw new RuntimeException("El modelo aún no está en el mercado");}
+
     }
 
     //Interface
@@ -31,7 +38,7 @@ public class Modelo implements ValueObject<Modelo.Properties> {
 
         Modelo modelo1 = (Modelo) o;
 
-        return modelo != null ? modelo.equals(modelo1.modelo) : modelo1.modelo == null;
+        return Objects.equals(modelo, modelo1.modelo);
     }
 
     @Override

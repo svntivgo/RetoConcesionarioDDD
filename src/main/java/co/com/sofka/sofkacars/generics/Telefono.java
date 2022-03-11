@@ -9,7 +9,22 @@ public class Telefono implements ValueObject<Telefono.Properties>{
         private final String telefono;
 
         // constructor
-        public Telefono(String telefono){
+        public Telefono(String telefono)
+        {
+            try
+            {
+                var telNumero= Integer.getInteger(telefono);
+            }catch (Exception e)
+            {
+                throw new RuntimeException("Solo puedes ingresar numeros") ;
+            }
+
+            if (!(telefono.length() ==10))
+            {
+                throw new RuntimeException("Solo pueden ser 10 digitos");
+            }
+
+
             this.telefono = telefono;
         }
 

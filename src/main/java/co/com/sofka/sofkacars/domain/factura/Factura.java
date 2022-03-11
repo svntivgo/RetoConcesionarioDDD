@@ -47,7 +47,7 @@ public class Factura extends AggregateEvent<FacturaId> {
 
     // se crea la funcion from para la factura
     // Metodo que permite reconstruir el estado del agregado a partir de una lista de eventos de dominios
-    public static Factura from(FacturaId facturaId, ConcesionarioId concesionarioId, List<DomainEvent> events){
+    public static Factura from(FacturaId facturaId, ConcesionarioId concesionarioId, List<DomainEvent> events) {
 
         var factura = new Factura(facturaId, concesionarioId);
         // Evento de dominio, aplica el evento de dominio sobre la factura
@@ -59,20 +59,26 @@ public class Factura extends AggregateEvent<FacturaId> {
     //Cambiar Cliente
     public void cambiarCliente(ClienteId clienteId, Nombre nombre, Set<Telefono> telefono, Identificacion identificacion) {
 
+
         Objects.requireNonNull(clienteId);
         Objects.requireNonNull(nombre);
         Objects.requireNonNull(telefono);
         Objects.requireNonNull(identificacion);
         appendChange(new ClienteCambiado(clienteId, nombre, telefono, identificacion)).apply();
+
+
     }
 
     //cambiar transaccion
     public void cambiarTransaccion(TransaccionId transaccionId, Fecha fecha, Precio precio) {
 
+
         Objects.requireNonNull(transaccionId);
         Objects.requireNonNull(fecha);
         Objects.requireNonNull(precio);
         appendChange(new TransaccionCambiada(transaccionId, fecha, precio)).apply();
+
+
     }
 
     //cambiar estado

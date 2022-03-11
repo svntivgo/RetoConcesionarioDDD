@@ -9,7 +9,8 @@ public class Identificacion implements ValueObject<Identificacion.Properties> {
         private final Long identificacion;
     
         // constructor
-        public Identificacion(Long identificacion){
+        public Identificacion(Long identificacion)
+        {
             this.identificacion = identificacion;
         }
     

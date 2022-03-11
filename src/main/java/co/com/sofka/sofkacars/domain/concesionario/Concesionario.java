@@ -56,6 +56,8 @@ public class Concesionario  extends AggregateEvent<ConcesionarioId>
     //Carro Entity
     public void aniadirCarro(CarroId carroId, Marca marca, Modelo modelo, Color color, Precio precio)
     {
+
+
         Objects.requireNonNull(carroId);
         Objects.requireNonNull(marca);
         Objects.requireNonNull(modelo);

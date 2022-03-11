@@ -21,6 +21,8 @@ public class EstadoActual implements ValueObject<EstadoActual.Value> {
         SEPARADO
     }
 
+
+
     // implementacion del metodo value
     @Override
     public EstadoActual.Value value(){

@@ -10,8 +10,15 @@ public class Nombre implements ValueObject<Nombre.Properties>{
 
         // constructor
         public Nombre(String nombre, String apellido){
-            this.nombre = nombre;
+
+
+            if (nombre.length()<2 || apellido.length()<2)
+            {
+                throw new RuntimeException("El nombre y el apellido debe de contener más de dos letras");
+            }
+            this.nombre=nombre;
             this.apellido = apellido;
+
         }
 
         // interface

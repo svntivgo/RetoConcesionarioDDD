@@ -9,8 +9,14 @@ public class Precio implements ValueObject<Precio.Properties> {
         private final Double precio;
 
         // constructor
-        public Precio(Double precio){
+        public Precio(Double precio)
+        {
+            if (precio <=0 )
+            {
+                throw  new RuntimeException("El precio debe de ser mayor a 0");
+            }
             this.precio = precio;
+
         }
 
         // interface

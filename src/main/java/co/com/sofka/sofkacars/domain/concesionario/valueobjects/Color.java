@@ -15,9 +15,9 @@ public class Color implements ValueObject<Color.Value>
 
             // crear el enum
             public enum Value{
-                NegroVALUE,
-                AzulVALUE,
-                BlancoVALUE,
+                Negro,
+                Azul,
+                Blanco,
 
             }
 
