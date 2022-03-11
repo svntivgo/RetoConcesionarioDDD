@@ -13,11 +13,15 @@ public class Mantenimiento implements ValueObject<Mantenimiento.Value>
         this.value = value;
     }
 
+//    public Mantenimiento(Value mantenimientoGeneral, Value cambiarLlantas, Value cambiarAceite, Value value) {
+//        this.value = value;
+//    }
+
     // crear el enum
     public enum Value{
          CambiarAceite,
         CambiarLlantas,
-        MantenimientoGeneral,
+        MantenimientoGeneral //value,
 
     }
 

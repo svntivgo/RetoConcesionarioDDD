@@ -5,15 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49e05ee2-39b6-41bf-ac9e-196c6042b2fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Mecanico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Servicio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Taller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Alicates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Gatos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/LlavesInglesas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Mantenimiento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0f77f8f71d7e6c935ee3d59dd00f961c446f888" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/BaulHerramientas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/BaulHerramientasAniadido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/BaulHerramientasCambiado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/BaulHerramientasEliminado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/Concesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/Concesionario.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/AniadirAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/AniadirAdmin.java" afterDir="false" />
@@ -26,7 +21,13 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AdminCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AdminCambiado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorAniadido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorAniadido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/generics/Identificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/generics/Alicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/valueobjects/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/valueobjects/Color.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Mecanico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Mecanico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Servicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Servicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Taller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Alicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Alicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Mantenimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Mantenimiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/generics/Alicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/generics/Identificacion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/co/com/sofka/sofkacars/usecase/concesionario/AniadirAsesorUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/sofka/sofkacars/usecase/concesionario/AniadirAsesorUseCaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,11 +149,19 @@
       <option name="project" value="LOCAL" />
       <updated>1646960765086</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Se implementan VO del AR taller">
+      <created>1646962990033</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646962990033</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se implementan los ids del AR taller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se implementan los ids del AR taller" />
+    <MESSAGE value="Se implementan VO del AR taller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implementan VO del AR taller" />
   </component>
 </project>

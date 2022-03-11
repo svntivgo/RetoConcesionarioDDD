@@ -10,8 +10,8 @@ public class Color implements ValueObject<Color.Value>
 
         //construc
         public Color(Value value){
-                this.value = value;
-            }
+                this.value = Objects.requireNonNull(value);//verificar
+        }
 
             // crear el enum
             public enum Value{

@@ -1,7 +1,6 @@
 package co.com.sofka.sofkacars.domain.taller.valueobjects;
 
 import co.com.sofka.domain.generic.ValueObject;
-import co.com.sofka.sofkacars.generics.Alicate;
 
 import java.util.Objects;
 

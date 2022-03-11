@@ -4,12 +4,12 @@ import co.com.sofka.domain.generic.ValueObject;
 
 import java.util.Objects;
 
-public class Alicate implements ValueObject<Alicate.Properties> {
+public class Identificacion implements ValueObject<Identificacion.Properties> {
      // declaración de variables
         private final Long identificacion;
     
         // constructor
-        public Alicate(Long identificacion){
+        public Identificacion(Long identificacion){
             this.identificacion = identificacion;
         }
     
@@ -29,8 +29,8 @@ public class Alicate implements ValueObject<Alicate.Properties> {
         @Override
         public boolean equals(Object o) {
             if (this == o) return true;
-            if (!(o instanceof Alicate)) return false;
-            Alicate that = (Alicate) o;
+            if (!(o instanceof Identificacion)) return false;
+            Identificacion that = (Identificacion) o;
             return Objects.equals(identificacion, that.identificacion);
         }
     

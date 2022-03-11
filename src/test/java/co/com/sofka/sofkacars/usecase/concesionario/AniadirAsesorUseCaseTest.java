@@ -5,7 +5,7 @@ import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.sofkacars.domain.concesionario.commands.AniadirAsesor;
 import co.com.sofka.sofkacars.domain.concesionario.events.AsesorAniadido;
 import co.com.sofka.sofkacars.domain.concesionario.ids.AsesorId;
-import co.com.sofka.sofkacars.generics.Alicate;
+import co.com.sofka.sofkacars.generics.Identificacion;
 import co.com.sofka.sofkacars.generics.Nombre;
 import co.com.sofka.sofkacars.generics.Telefono;
 import org.junit.jupiter.api.Test;
@@ -16,7 +16,7 @@ class AniadirAsesorUseCaseTest {
         //arrange
         AsesorId asesorId = AsesorId.of("Este es un id");
         Nombre nombre = new Nombre("Juanito", "Alimaña");
-        Alicate identificacion = new Alicate(123456L);
+        Identificacion identificacion = new Identificacion(123456L);
         Telefono telefono = new Telefono("3114567890");
         var command = new AniadirAsesor(asesorId, nombre, identificacion, telefono);
         var usecase = new AniadirAsesorUseCase();

@@ -2,7 +2,7 @@ package co.com.sofka.sofkacars.domain.concesionario.entities;
 
 import co.com.sofka.domain.generic.Entity;
 import co.com.sofka.sofkacars.domain.concesionario.ids.AsesorId;
-import co.com.sofka.sofkacars.generics.Alicate;
+import co.com.sofka.sofkacars.generics.Identificacion;
 import co.com.sofka.sofkacars.generics.Nombre;
 import co.com.sofka.sofkacars.generics.Telefono;
 
@@ -12,14 +12,14 @@ public class Asesor extends Entity <AsesorId>
 {
 
     private Nombre nombre;
-    private Alicate identificacion;
+    private Identificacion identificacion;
     private Telefono telefono;
 
 
 
     // se crea un constructor publico para los objectValue
 
-    public Asesor(AsesorId asesorId, Nombre nombre, Alicate identificacion, Telefono telefono){
+    public Asesor(AsesorId asesorId, Nombre nombre, Identificacion identificacion, Telefono telefono){
 
         // Super --> herencia
         super(asesorId);
@@ -37,7 +37,7 @@ public class Asesor extends Entity <AsesorId>
     }
 
     // cambiarIdentificacion()
-    public void cambiarIdentificacion(Alicate identificacion){
+    public void cambiarIdentificacion(Identificacion identificacion){
         this.identificacion = Objects.requireNonNull(identificacion);
     }
 

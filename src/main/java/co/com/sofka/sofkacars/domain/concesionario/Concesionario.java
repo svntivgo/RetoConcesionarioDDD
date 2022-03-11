@@ -14,7 +14,7 @@ import co.com.sofka.sofkacars.domain.concesionario.valueobjects.Color;
 import co.com.sofka.sofkacars.domain.concesionario.valueobjects.Email;
 import co.com.sofka.sofkacars.domain.concesionario.valueobjects.Marca;
 import co.com.sofka.sofkacars.domain.concesionario.valueobjects.Modelo;
-import co.com.sofka.sofkacars.generics.Alicate;
+import co.com.sofka.sofkacars.generics.Identificacion;
 import co.com.sofka.sofkacars.generics.Nombre;
 import co.com.sofka.sofkacars.generics.Precio;
 import co.com.sofka.sofkacars.generics.Telefono;
@@ -84,7 +84,7 @@ public class Concesionario  extends AggregateEvent<ConcesionarioId>
     }
 
     //Admin entity
-    public void aniadirAdmin(AdministradorId administradorId, Nombre nombre, Alicate identificacion, Email email)
+    public void aniadirAdmin(AdministradorId administradorId, Nombre nombre, Identificacion identificacion, Email email)
     {
         Objects.requireNonNull(administradorId);
         Objects.requireNonNull(nombre);
@@ -94,7 +94,7 @@ public class Concesionario  extends AggregateEvent<ConcesionarioId>
 
     }
 
-    public void cambiarAdmin(AdministradorId administradorId, Nombre nombre, Alicate identificacion, Email email)
+    public void cambiarAdmin(AdministradorId administradorId, Nombre nombre, Identificacion identificacion, Email email)
     {
         Objects.requireNonNull(administradorId);
         Objects.requireNonNull(nombre);
@@ -114,7 +114,7 @@ public class Concesionario  extends AggregateEvent<ConcesionarioId>
 
     //Asesor entity
 
-    public void aniadirAsesor(AsesorId asesorId, Nombre nombre, Alicate identificacion, Telefono telefono)
+    public void aniadirAsesor(AsesorId asesorId, Nombre nombre, Identificacion identificacion, Telefono telefono)
     {
         Objects.requireNonNull(asesorId);
         Objects.requireNonNull(nombre);
@@ -124,7 +124,7 @@ public class Concesionario  extends AggregateEvent<ConcesionarioId>
 
     }
 
-    public void cambiarAsesor(AsesorId asesorId, Nombre nombre, Alicate identificacion, Telefono telefono)
+    public void cambiarAsesor(AsesorId asesorId, Nombre nombre, Identificacion identificacion, Telefono telefono)
     {
         Objects.requireNonNull(asesorId);
         Objects.requireNonNull(nombre);
