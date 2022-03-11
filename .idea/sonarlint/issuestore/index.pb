@@ -18,6 +18,10 @@ Ksrc/main/java/co/com/sofka/sofkacars/domain/concesionario/ids/AsesorId.java,5\
 „
 Tsrc/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AdminEliminado.java,1\7\17379bc660250e6610e413b6f14b94d3158d68b6
 „
+Tsrc/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/CambiarAdmin.java,3\2\3202d8ef85e33f07c7adb8c42a9934a85a8efc28
+…
+Usrc/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/CambiarAsesor.java,3\6\36a92371a3e4b4ad505b531e5f53a6fcb5a09f43
+„
 Tsrc/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorCambiado.java,c\9\c97925626a4a348f0faabde2b6cff918d7428a6a
 
 Osrc/main/java/co/com/sofka/sofkacars/domain/taller/events/MecanicoCambiado.java,5\4\5422c37c67712a24a668d87e56e486e694eebf18
@@ -55,8 +59,12 @@ Dsrc/main/java/co/com/sofka/sofkacars/domain/taller/TallerChange.java,1\6\165e6
 Xsrc/main/java/co/com/sofka/sofkacars/domain/taller/events/BaulHerramientasEliminado.java,e\4\e47b3377b7b6bac6c0cfef005f0e2e319b679e60
 €
 Psrc/main/java/co/com/sofka/sofkacars/domain/taller/events/MecanicoEliminado.java,a\c\ac7c3eb9e5eeafde66911198e04d6b6c02b0d9e9
+ˆ
+Xsrc/main/java/co/com/sofka/sofkacars/domain/taller/commands/AniadirBaulHerramientas.java,4\f\4fdc6d8fec312791bcf653fa7edebca7615e6137
+ˆ
+Xsrc/main/java/co/com/sofka/sofkacars/domain/taller/commands/CambiarBaulHerramientas.java,6\4\64b48b0ceb9767c3e31b835158a65c703c83d712
 €
-Psrc/main/java/co/com/sofka/sofkacars/domain/taller/commands/CambiarServicio.java,d\a\dafa9e864800d5b3dca772fb7b87fabb04943cfe
+Psrc/main/java/co/com/sofka/sofkacars/domain/taller/commands/AniadirMecanico.java,4\9\4915a5e021e355ac2ef83d481b32b83187b245d5
 }
 Msrc/main/java/co/com/sofka/sofkacars/domain/factura/events/FacturaCreada.java,c\6\c608853024354605d96c43a186316379d72e3f5b
 ƒ
@@ -65,5 +73,3 @@ Ssrc/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/LlavesInglesas.
 Wsrc/main/java/co/com/sofka/sofkacars/domain/taller/events/BaulHerramientasAniadido.java,b\1\b1d4646801e1704cf83dce98d047b7e1afcf4267
 {
 Ksrc/main/java/co/com/sofka/sofkacars/domain/taller/events/TallerCreado.java,d\7\d7a238f6e4996f1541521c7906fe762cd3f9ac08
-|
-Lsrc/main/java/co/com/sofka/sofkacars/domain/taller/commands/CrearTaller.java,5\9\592e27c1e5ee356c4bb6ceab7396e0a89b8adf6a
