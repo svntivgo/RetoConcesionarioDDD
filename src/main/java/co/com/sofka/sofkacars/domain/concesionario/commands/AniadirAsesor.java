@@ -2,17 +2,17 @@ package co.com.sofka.sofkacars.domain.concesionario.commands;
 
 import co.com.sofka.domain.generic.Command;
 import co.com.sofka.sofkacars.domain.concesionario.ids.AsesorId;
-import co.com.sofka.sofkacars.generics.Identificacion;
+import co.com.sofka.sofkacars.generics.Alicate;
 import co.com.sofka.sofkacars.generics.Nombre;
 import co.com.sofka.sofkacars.generics.Telefono;
 
 public class AniadirAsesor extends Command {
     private final AsesorId asesorId;
     private final Nombre nombre;
-    private final Identificacion identificacion;
+    private final Alicate identificacion;
     private final Telefono telefono;
 
-    public AniadirAsesor(AsesorId asesorId, Nombre nombre, Identificacion identificacion, Telefono telefono) {
+    public AniadirAsesor(AsesorId asesorId, Nombre nombre, Alicate identificacion, Telefono telefono) {
         this.asesorId = asesorId;
         this.nombre = nombre;
         this.identificacion = identificacion;
@@ -27,7 +27,7 @@ public class AniadirAsesor extends Command {
         return nombre;
     }
 
-    public Identificacion getIdentificacion() {
+    public Alicate getIdentificacion() {
         return identificacion;
     }
 

@@ -5,11 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49e05ee2-39b6-41bf-ac9e-196c6042b2fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/ids/BaulHerramientasId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/ids/MecanicoId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/ids/ServicioId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/ids/TallerId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Mecanico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Servicio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Taller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Alicates.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Gatos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/LlavesInglesas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Mantenimiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/0/c0f77f8f71d7e6c935ee3d59dd00f961c446f888" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/Concesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/Concesionario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/AniadirAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/AniadirAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/AniadirAsesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/AniadirAsesor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/CambiarAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/CambiarAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/CambiarAsesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/CambiarAsesor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/entities/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/entities/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/entities/Asesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/entities/Asesor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AdminAniadido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AdminAniadido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AdminCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AdminCambiado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorAniadido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorAniadido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorCambiado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/generics/Identificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/generics/Alicate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/sofka/sofkacars/usecase/concesionario/AniadirAsesorUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/sofka/sofkacars/usecase/concesionario/AniadirAsesorUseCaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +64,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -122,6 +141,18 @@
       <option name="presentableId" value="Default" />
       <updated>1646860575952</updated>
     </task>
+    <task id="LOCAL-00001" summary="Se implementan los ids del AR taller">
+      <created>1646960765086</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646960765086</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Se implementan los ids del AR taller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implementan los ids del AR taller" />
   </component>
 </project>
