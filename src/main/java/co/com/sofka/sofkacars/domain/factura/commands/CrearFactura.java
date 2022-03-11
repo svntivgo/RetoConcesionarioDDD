@@ -5,6 +5,7 @@ import co.com.sofka.sofkacars.domain.concesionario.ids.ConcesionarioId;
 import co.com.sofka.sofkacars.domain.factura.ids.FacturaId;
 
 public class CrearFactura extends Command {
+
     private final FacturaId facturaId;
     private final ConcesionarioId concesionarioId;
 

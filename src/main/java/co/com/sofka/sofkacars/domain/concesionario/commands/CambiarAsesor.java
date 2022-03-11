@@ -2,18 +2,21 @@ package co.com.sofka.sofkacars.domain.concesionario.commands;
 
 import co.com.sofka.domain.generic.Command;
 import co.com.sofka.sofkacars.domain.concesionario.ids.AsesorId;
+import co.com.sofka.sofkacars.domain.concesionario.ids.ConcesionarioId;
 import co.com.sofka.sofkacars.generics.Identificacion;
 import co.com.sofka.sofkacars.generics.Nombre;
 import co.com.sofka.sofkacars.generics.Telefono;
 
 public class CambiarAsesor extends Command {
+    private final ConcesionarioId concesionarioId;
     private final AsesorId asesorId;
     private final Nombre nombre;
     private final Identificacion identificacion;
     private final Telefono telefono;
 
     //Constructor
-    public CambiarAsesor(AsesorId asesorId, Nombre nombre, Identificacion identificacion, Telefono telefono) {
+    public CambiarAsesor(ConcesionarioId concesionarioId,AsesorId asesorId, Nombre nombre, Identificacion identificacion, Telefono telefono) {
+        this.concesionarioId=concesionarioId;
         this.asesorId = asesorId;
         this.nombre = nombre;
         this.identificacion = identificacion;
@@ -23,6 +26,10 @@ public class CambiarAsesor extends Command {
 
     //Métodos get
 
+
+    public ConcesionarioId getConcesionarioId() {
+        return concesionarioId;
+    }
 
     public AsesorId getAsesorId() {
         return asesorId;
