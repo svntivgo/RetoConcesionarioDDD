@@ -3,12 +3,14 @@ package co.com.sofka.sofkacars.domain.taller.entities;
 import co.com.sofka.domain.generic.Entity;
 import co.com.sofka.sofkacars.domain.taller.ids.ServicioId;
 import co.com.sofka.sofkacars.domain.taller.valueobjects.Mantenimiento;
-import com.sun.jdi.Value;
+
+
+import java.util.Objects;
 
 public class Servicio extends Entity<ServicioId>
 {
     private Mantenimiento mantenimiento;
-    //private Mantenimiento.Value value;
+
 
     public Servicio(ServicioId servicioId, Mantenimiento mantenimiento) {
         super(servicioId);
@@ -17,8 +19,8 @@ public class Servicio extends Entity<ServicioId>
 
     //--------------FALTA TERMINAR-------------------
 
-//    public void nuevoMantenimiento(Mantenimiento mantenimiento)
-//    {
-//        this.mantenimiento= new Mantenimiento(Mantenimiento.Value.MantenimientoGeneral,Mantenimiento.Value.CambiarLlantas,Mantenimiento.Value.CambiarAceite, Mantenimiento.Value.value);
-//    }
+    public void nuevoMantenimiento(Mantenimiento mantenimiento)
+    {
+        this.mantenimiento= Objects.requireNonNull(mantenimiento);
+    }
 }

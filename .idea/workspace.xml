@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49e05ee2-39b6-41bf-ac9e-196c6042b2fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/MecanicoAniadido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/MecanicoCambiado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/MecanicoEliminado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/ServicioAniadido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/ServicioCambiado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/ServicioEliminado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Servicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Servicio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Mantenimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Mantenimiento.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,13 +142,21 @@
       <option name="project" value="LOCAL" />
       <updated>1646968608451</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Se implementan las eventos restantes del AR taller">
+      <created>1646970010520</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646970010520</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se implementan los ids del AR taller" />
     <MESSAGE value="Se implementan VO del AR taller" />
     <MESSAGE value="Se implementan las entidades de taller con sus métodos, así como los 3 eventos de la entidad BaulHerramientas" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se implementan las entidades de taller con sus métodos, así como los 3 eventos de la entidad BaulHerramientas" />
+    <MESSAGE value="Se implementan las eventos restantes del AR taller" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implementan las eventos restantes del AR taller" />
   </component>
 </project>
