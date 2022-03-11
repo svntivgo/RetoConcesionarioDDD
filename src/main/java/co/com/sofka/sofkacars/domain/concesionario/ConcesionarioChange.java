@@ -6,9 +6,9 @@ import co.com.sofka.sofkacars.domain.concesionario.entities.Asesor;
 import co.com.sofka.sofkacars.domain.concesionario.entities.Carro;
 import co.com.sofka.sofkacars.domain.concesionario.events.*;
 
-public class ConsecionarioChange extends EventChange
+public class ConcesionarioChange extends EventChange
 {
-    public ConsecionarioChange(Concesionario concesionario)
+    public ConcesionarioChange(Concesionario concesionario)
     {
         apply((ConcesionarioCreado event) -> concesionario.concesionarioId = event.getConcesionarioId());
 

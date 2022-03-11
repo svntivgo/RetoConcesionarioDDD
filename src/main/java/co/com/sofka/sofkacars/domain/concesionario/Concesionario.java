@@ -38,7 +38,7 @@ public class Concesionario  extends AggregateEvent<ConcesionarioId>
         super(concesionarioId);
         appendChange(new ConcesionarioCreado(concesionarioId)).apply();
 
-        subscribe(new ConsecionarioChange(this));
+        subscribe(new ConcesionarioChange(this));
     }
 
 
