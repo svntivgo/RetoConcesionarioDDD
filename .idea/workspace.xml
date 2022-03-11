@@ -5,30 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49e05ee2-39b6-41bf-ac9e-196c6042b2fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/BaulHerramientas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/BaulHerramientasAniadido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/BaulHerramientasCambiado.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/BaulHerramientasEliminado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/MecanicoAniadido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/MecanicoCambiado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/MecanicoEliminado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/ServicioAniadido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/ServicioCambiado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/events/ServicioEliminado.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/Concesionario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/Concesionario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/AniadirAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/AniadirAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/AniadirAsesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/AniadirAsesor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/CambiarAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/CambiarAdmin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/CambiarAsesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/CambiarAsesor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/entities/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/entities/Administrador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/entities/Asesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/entities/Asesor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AdminAniadido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AdminAniadido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AdminCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AdminCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorAniadido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorAniadido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorCambiado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorCambiado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/valueobjects/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/concesionario/valueobjects/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Mecanico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Mecanico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Servicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Servicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/entities/Taller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Alicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Alicates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Mantenimiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/Mantenimiento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/generics/Alicate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/com/sofka/sofkacars/generics/Identificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/co/com/sofka/sofkacars/usecase/concesionario/AniadirAsesorUseCaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/co/com/sofka/sofkacars/usecase/concesionario/AniadirAsesorUseCaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -156,12 +140,20 @@
       <option name="project" value="LOCAL" />
       <updated>1646962990033</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Se implementan las entidades de taller con sus métodos, así como los 3 eventos de la entidad BaulHerramientas">
+      <created>1646968608451</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1646968608451</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Se implementan los ids del AR taller" />
     <MESSAGE value="Se implementan VO del AR taller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Se implementan VO del AR taller" />
+    <MESSAGE value="Se implementan las entidades de taller con sus métodos, así como los 3 eventos de la entidad BaulHerramientas" />
+    <option name="LAST_COMMIT_MESSAGE" value="Se implementan las entidades de taller con sus métodos, así como los 3 eventos de la entidad BaulHerramientas" />
   </component>
 </project>

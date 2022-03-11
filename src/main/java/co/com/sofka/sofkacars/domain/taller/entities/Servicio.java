@@ -8,7 +8,7 @@ import com.sun.jdi.Value;
 public class Servicio extends Entity<ServicioId>
 {
     private Mantenimiento mantenimiento;
-    private Mantenimiento.Value value;
+    //private Mantenimiento.Value value;
 
     public Servicio(ServicioId servicioId, Mantenimiento mantenimiento) {
         super(servicioId);
