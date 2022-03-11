@@ -10,22 +10,18 @@ public class ConsecionarioChange extends EventChange
 {
     public ConsecionarioChange(Concesionario concesionario)
     {
-        apply((ConcesionarioCreado event) -> {
-            concesionario.concesionarioId = event.getConcesionarioId();
-        });
+        apply((ConcesionarioCreado event) -> concesionario.concesionarioId = event.getConcesionarioId());
 
         //métodos de cada uno de las entidades
         //añadiendo carros
 
-        apply((CarroAniadido event) -> {
-            concesionario.carros.add(new Carro(
-                    event.getCarroId(),
-                    event.getMarca(),
-                    event.getModelo(),
-                    event.getColor(),
-                    event.getPrecio()
-            ));
-        });
+        apply((CarroAniadido event) -> concesionario.carros.add(new Carro(
+                event.getCarroId(),
+                event.getMarca(),
+                event.getModelo(),
+                event.getColor(),
+                event.getPrecio()
+        )));
 
         //cambiandoCarros
         apply((CarroCambiado event) -> {

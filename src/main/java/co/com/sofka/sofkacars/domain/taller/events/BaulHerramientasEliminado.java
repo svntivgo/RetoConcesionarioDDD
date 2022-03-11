@@ -10,4 +10,8 @@ public class BaulHerramientasEliminado extends DomainEvent {
         super("RetoConcesionarioDDD.BaulHerramientasEliminado");
         this.baulHerramientasId = baulHerramientasId;
     }
+
+    public BaulHerramientasId getBaulHerramientasId() {
+        return baulHerramientasId;
+    }
 }

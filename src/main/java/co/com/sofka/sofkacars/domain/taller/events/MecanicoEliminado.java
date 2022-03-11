@@ -11,4 +11,9 @@ public class MecanicoEliminado extends DomainEvent
         super("RetoConcesionarioDDD.MecanicoEliminado");
         this.mecanicoId = mecanicoId;
     }
+
+    public MecanicoId getMecanicoId() {
+        return mecanicoId;
+    }
 }
+
