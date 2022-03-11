@@ -29,8 +29,6 @@ Osrc/main/java/co/com/sofka/sofkacars/domain/taller/events/MecanicoCambiado.java
 Osrc/main/java/co/com/sofka/sofkacars/domain/taller/events/MecanicoAniadido.java,c\d\cd2a89ac44ac6dbf855d25f7f64bb805aa0409c5
 
 Osrc/main/java/co/com/sofka/sofkacars/domain/taller/events/ServicioAniadido.java,b\b\bb5fcbc04e887e0fed5898947c36941e2b52a3f4
-„
-Tsrc/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/AniadirAdmin.java,c\e\ce590eb94587b3df9c5e3a1b2fb33634f4b0e736
 …
 Usrc/main/java/co/com/sofka/sofkacars/domain/concesionario/commands/AniadirAsesor.java,8\0\801f2c14d8d557276db6eb8b8b479ba8556650b1
 ~
