@@ -64,8 +64,6 @@ Xsrc/main/java/co/com/sofka/sofkacars/domain/taller/commands/AniadirBaulHerramie
 ˆ
 Xsrc/main/java/co/com/sofka/sofkacars/domain/taller/commands/CambiarBaulHerramientas.java,6\4\64b48b0ceb9767c3e31b835158a65c703c83d712
 €
-Psrc/main/java/co/com/sofka/sofkacars/domain/taller/commands/CambiarServicio.java,d\a\dafa9e864800d5b3dca772fb7b87fabb04943cfe
-€
 Psrc/main/java/co/com/sofka/sofkacars/domain/taller/commands/AniadirMecanico.java,4\9\4915a5e021e355ac2ef83d481b32b83187b245d5
 }
 Msrc/main/java/co/com/sofka/sofkacars/domain/factura/events/FacturaCreada.java,c\6\c608853024354605d96c43a186316379d72e3f5b
@@ -75,5 +73,3 @@ Ssrc/main/java/co/com/sofka/sofkacars/domain/taller/valueobjects/LlavesInglesas.
 Wsrc/main/java/co/com/sofka/sofkacars/domain/taller/events/BaulHerramientasAniadido.java,b\1\b1d4646801e1704cf83dce98d047b7e1afcf4267
 {
 Ksrc/main/java/co/com/sofka/sofkacars/domain/taller/events/TallerCreado.java,d\7\d7a238f6e4996f1541521c7906fe762cd3f9ac08
-|
-Lsrc/main/java/co/com/sofka/sofkacars/domain/taller/commands/CrearTaller.java,5\9\592e27c1e5ee356c4bb6ceab7396e0a89b8adf6a
