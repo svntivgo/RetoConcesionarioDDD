@@ -8,16 +8,20 @@ import org.junit.jupiter.api.Test;
 
 class CrearConcesionarioTest {
 
-//    @Test
-//    void crearConcesionario () {
-//        //arrange
-//        ConcesionarioId concesionarioId = ConcesionarioId.of("Este es un id");
-//        var command = new CrearConcesionario(concesionarioId);
-//        var usecase = new co.com.sofka.sofkacars.usecase.concesionario.CrearConcesionario();
-//
-//        //act
-//        UseCaseHandler.getInstance()
-//                .asyncExecutor(usecase, new RequestCommand<>(command));
-//    }
+    @Test
+    void crearConcesionario () {
+        //arrange
+        ConcesionarioId concesionarioId = ConcesionarioId.of("Este es un id");
+        var command = new CrearConcesionario(concesionarioId);
+        var usecase = new CrearConcesionarioUseCase();
+
+        var events = UseCaseHandler.getInstance()
+                        .syncExecutor(usecase,new RequestCommand<>(command))
+                        .orElseThrow()
+                        .getDomainEvents();
+
+
+
+    }
 
 }

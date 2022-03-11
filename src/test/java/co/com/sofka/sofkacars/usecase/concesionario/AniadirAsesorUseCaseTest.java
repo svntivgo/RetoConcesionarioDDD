@@ -5,6 +5,7 @@ import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.sofkacars.domain.concesionario.commands.AniadirAsesor;
 import co.com.sofka.sofkacars.domain.concesionario.events.AsesorAniadido;
 import co.com.sofka.sofkacars.domain.concesionario.ids.AsesorId;
+import co.com.sofka.sofkacars.domain.concesionario.valueobjects.Email;
 import co.com.sofka.sofkacars.generics.Identificacion;
 import co.com.sofka.sofkacars.generics.Nombre;
 import co.com.sofka.sofkacars.generics.Telefono;
@@ -18,6 +19,7 @@ class AniadirAsesorUseCaseTest {
         Nombre nombre = new Nombre("Jaa", "Alimaña");
         Identificacion identificacion = new Identificacion(123456L);
         Telefono telefono = new Telefono("3114567822");
+
         var command = new AniadirAsesor(asesorId, nombre, identificacion, telefono);
         var usecase = new AniadirAsesorUseCase();
 
