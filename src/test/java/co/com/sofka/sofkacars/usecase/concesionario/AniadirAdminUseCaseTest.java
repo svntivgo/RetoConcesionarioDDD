@@ -3,15 +3,12 @@ package co.com.sofka.sofkacars.usecase.concesionario;
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.sofkacars.domain.concesionario.commands.AniadirAdmin;
-import co.com.sofka.sofkacars.domain.concesionario.commands.AniadirAsesor;
 import co.com.sofka.sofkacars.domain.concesionario.events.AdminAniadido;
 import co.com.sofka.sofkacars.domain.concesionario.ids.AdministradorId;
-import co.com.sofka.sofkacars.domain.concesionario.ids.AsesorId;
 import co.com.sofka.sofkacars.domain.concesionario.ids.ConcesionarioId;
 import co.com.sofka.sofkacars.domain.concesionario.valueobjects.Email;
 import co.com.sofka.sofkacars.generics.Identificacion;
 import co.com.sofka.sofkacars.generics.Nombre;
-import co.com.sofka.sofkacars.generics.Telefono;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
