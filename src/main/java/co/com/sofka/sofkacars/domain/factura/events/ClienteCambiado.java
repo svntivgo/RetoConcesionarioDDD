@@ -16,7 +16,7 @@ public class ClienteCambiado extends DomainEvent {
     private final Identificacion identificacion;
 
     public ClienteCambiado(ClienteId clienteId, Nombre nombre, Set<Telefono> telefono, Identificacion identificacion) {
-        super("RopaDeportiva.ClienteCambiado");
+        super("RetoConcesionarioDDD.ClienteCambiado");
         this.clienteId = clienteId;
         this.nombre = nombre;
         this.telefono = telefono;
