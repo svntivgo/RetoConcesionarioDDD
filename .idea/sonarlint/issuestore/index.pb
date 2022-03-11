@@ -51,16 +51,12 @@ y
 Isrc/main/java/co/com/sofka/sofkacars/domain/taller/entities/Mecanico.java,6\6\66a10a6d9ba000087ba5745ee426792c620bbba5
 Å
 Qsrc/main/java/co/com/sofka/sofkacars/domain/taller/entities/BaulHerramientas.java,e\8\e87c2ad9f69a7c4a1e580f345218b09a7fbfd963
-â
-Ysrc/main/java/co/com/sofka/sofkacars/domain/concesionario/events/ConcesionarioCreado.java,6\5\653794799f0a50d20eba60b52b2ba27a1e75bcea
 Ö
 Usrc/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AsesorEliminado.java,8\f\8ff4717f2966390371436c858c7ffbbce6fea47f
 Ñ
 Tsrc/main/java/co/com/sofka/sofkacars/domain/concesionario/events/CarroEliminado.java,1\f\1fa0b24b56f253d4f58488fa27ea050244e3d106
 á
 Wsrc/main/java/co/com/sofka/sofkacars/domain/taller/events/BaulHerramientasCambiado.java,5\8\58e3c35cc7fa7525ec5b442c8db446dbf8ae0692
-É
-Ssrc/main/java/co/com/sofka/sofkacars/domain/concesionario/events/AdminAniadido.java,9\7\97e8bf493a23a1d4a675ffa112ff44e182fe08b2
 t
 Dsrc/main/java/co/com/sofka/sofkacars/domain/taller/TallerChange.java,1\6\165e692594e7fb9ea383e99b141f4fafe23b1e24
 à
