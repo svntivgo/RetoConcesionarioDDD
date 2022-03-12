@@ -15,7 +15,7 @@ public class AdminCambiado extends DomainEvent
     private final Email email;
 
     public AdminCambiado(AdministradorId administradorId, Nombre nombre, Identificacion identificacion, Email email) {
-        super("RetConcesionarioDDD.AdminCambiado");
+        super("RetoConcesionarioDDD.AdminCambiado");
         this.administradorId = administradorId;
         this.nombre = nombre;
         this.identificacion = identificacion;
