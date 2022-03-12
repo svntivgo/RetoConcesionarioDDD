@@ -11,6 +11,7 @@ public class AniadirAsesorUseCase extends UseCase<RequestCommand<AniadirAsesor>,
     public void executeUseCase(RequestCommand<AniadirAsesor> input) {
         var command = input.getCommand();
         var concesionario = new Concesionario(command.getConcesionarioId());
+        concesionario.aniadirAsesor(command.getAsesorId(),command.getNombre(),command.getIdentificacion(),command.getTelefono());
         emit().onResponse(new ResponseEvents(concesionario.getUncommittedChanges()));
     }
 }

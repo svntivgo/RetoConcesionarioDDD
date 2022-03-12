@@ -13,6 +13,7 @@ public class AniadirAdminUseCase extends UseCase<RequestCommand<AniadirAdmin>, R
         var command = input.getCommand();
 
         var concesionario = new Concesionario(command.getConcesionarioId());
+        concesionario.aniadirAdmin(command.getAdministradorId(),command.getNombre(),command.getIdentificacion(),command.getEmail());
         emit().onResponse(new ResponseEvents(concesionario.getUncommittedChanges()));
     }
 }

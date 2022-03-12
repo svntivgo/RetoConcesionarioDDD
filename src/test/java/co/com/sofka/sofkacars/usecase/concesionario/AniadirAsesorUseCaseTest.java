@@ -4,7 +4,6 @@ import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.generic.DomainEvent;
-import co.com.sofka.sofkacars.domain.concesionario.Concesionario;
 import co.com.sofka.sofkacars.domain.concesionario.commands.AniadirAsesor;
 import co.com.sofka.sofkacars.domain.concesionario.events.AsesorAniadido;
 import co.com.sofka.sofkacars.domain.concesionario.events.ConcesionarioCreado;
@@ -19,15 +18,14 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.mockito.junit.jupiter.MockitoSettings;
+import org.mockito.quality.Strictness;
 
 import java.util.List;
 
 @ExtendWith(MockitoExtension.class)
+@MockitoSettings(strictness = Strictness.LENIENT)
 class AniadirAsesorUseCaseTest {
-
-    Nombre nombre = new Nombre("Jaa", "Alimaña");
-    Identificacion identificacion = new Identificacion(123456L);
-    Telefono telefono = new Telefono("3114567820");
 
     @Mock
     private DomainEventRepository repository;
@@ -37,28 +35,32 @@ class AniadirAsesorUseCaseTest {
         //arrange
         ConcesionarioId concesionarioId = ConcesionarioId.of("1");
         AsesorId asesorId = AsesorId.of("2");
-//        Nombre nombre = new Nombre("Jaa", "Alimaña");
-//        Identificacion identificacion = new Identificacion(123456L);
-//        Telefono telefono = new Telefono("3114567820");
+        Nombre nombre = new Nombre("Jaa", "Alimaña");
+        Identificacion identificacion = new Identificacion(123456L);
+        Telefono telefono = new Telefono("3114567820");
 
         var command = new AniadirAsesor(concesionarioId,asesorId,nombre, identificacion, telefono);
         var usecase = new AniadirAsesorUseCase();
 
-
-
-        Mockito.when(repository.getEventsBy("1")).thenReturn(historial());
+        Mockito.when(repository.getEventsBy(concesionarioId.value())).thenReturn(historial());
         usecase.addRepository(repository);
 
         //act
         var events = UseCaseHandler.getInstance()
+                .setIdentifyExecutor("1")
                 .syncExecutor(usecase, new RequestCommand<>(command))
                 .orElseThrow()
                 .getDomainEvents();
 
         //assert
-        var event=(AsesorAniadido)events.get(0);
+        var event=events.get(1);
+        var asesor = (AsesorAniadido)events.get(1);
+
         Assertions.assertEquals("RetoConcesionarioDDD.AsesorAniadido",event.type);
-        Assertions.assertEquals("2",event.getAsesorId().value());
+        Assertions.assertEquals(asesorId,asesor.getAsesorId());
+        Assertions.assertEquals(nombre,asesor.getNombre());
+        Assertions.assertEquals(identificacion,asesor.getIdentificacion());
+        Assertions.assertEquals(telefono,asesor.getTelefono());
 
 
     }
@@ -66,8 +68,7 @@ class AniadirAsesorUseCaseTest {
     public List<DomainEvent> historial() {
 
         return List.of(
-                new ConcesionarioCreado(ConcesionarioId.of("1")),
-                new AsesorAniadido(AsesorId.of("2"), nombre, identificacion, telefono)
+                new ConcesionarioCreado(ConcesionarioId.of("1"))
         );
     }
 
