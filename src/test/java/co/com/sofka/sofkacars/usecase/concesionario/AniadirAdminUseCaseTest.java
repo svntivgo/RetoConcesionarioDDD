@@ -34,10 +34,6 @@ import static org.junit.jupiter.api.Assertions.*;
 @MockitoSettings(strictness = Strictness.LENIENT)
 class AniadirAdminUseCaseTest {
 
-    Nombre nombre = new Nombre("Jaa", "Alimaña");
-    Identificacion identificacion = new Identificacion(123456L);
-    Email email = new Email("admin@concesionario.com");
-
     @Mock
     private DomainEventRepository repository;
 
@@ -46,9 +42,9 @@ class AniadirAdminUseCaseTest {
         //arrange
         ConcesionarioId concesionarioId = ConcesionarioId.of("1");
         AdministradorId administradorId = AdministradorId.of("2");
-//        Nombre nombre = new Nombre("Jaa", "Alimaña");
-//        Identificacion identificacion = new Identificacion(123456L);
-//        Telefono telefono = new Telefono("3114567820");
+        Nombre nombre = new Nombre("Jaa", "Alimaña");
+        Identificacion identificacion = new Identificacion(123456L);
+        Email email = new Email("admin@concesionario.com");
 
         var command = new AniadirAdmin(concesionarioId,administradorId,nombre, identificacion, email);
         var usecase = new AniadirAdminUseCase();
@@ -66,7 +62,10 @@ class AniadirAdminUseCaseTest {
         //assert
         var event=(AdminAniadido)events.get(1);
         Assertions.assertEquals("RetoConcesionarioDDD.AdminAniadido",event.type);
-//        Assertions.assertEquals("2",event.);
+        Assertions.assertEquals(administradorId,event.getAdministradorId());
+        Assertions.assertEquals(nombre,event.getNombre());
+        Assertions.assertEquals(identificacion,event.getIdentificacion());
+        Assertions.assertEquals(email,event.getEmail());
 
 
     }
@@ -75,7 +74,6 @@ class AniadirAdminUseCaseTest {
 
         return List.of(
                 new ConcesionarioCreado(ConcesionarioId.of("1"))
-//                new AsesorAniadido(AsesorId.of("3"), nombre, identificacion, telefono)
         );
     }
 
