@@ -12,6 +12,7 @@ public class AniadirCarroUseCase extends UseCase<RequestCommand<AniadirCarro>, R
         var command = input.getCommand();
 
         var concecionario = new Concesionario(command.getConcesionarioId());
+
         concecionario.aniadirCarro(command.getCarroId(),command.getMarca(),command.getModelo(),command.getColor(),command.getPrecio());
         emit().onResponse(new ResponseEvents(concecionario.getUncommittedChanges()));
     }
