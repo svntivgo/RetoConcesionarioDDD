@@ -39,7 +39,7 @@ class AniadirCarroUseCaseTest {
     private DomainEventRepository repository;
 
     @Test
-    void crearAdmin () {
+    void añadirCarro () {
         //arrange
         ConcesionarioId concesionarioId = ConcesionarioId.of("1");
         CarroId carroId = CarroId.of("2");
