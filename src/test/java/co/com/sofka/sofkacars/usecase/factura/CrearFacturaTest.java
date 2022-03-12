@@ -1,4 +1,4 @@
-package co.com.sofka.sofkacars.usecase.concesionario;
+package co.com.sofka.sofkacars.usecase.factura;
 
 import co.com.sofka.business.generic.UseCaseHandler;
 import co.com.sofka.business.support.RequestCommand;
@@ -9,6 +9,7 @@ import co.com.sofka.sofkacars.domain.factura.Factura;
 import co.com.sofka.sofkacars.domain.factura.commands.CrearFactura;
 import co.com.sofka.sofkacars.domain.factura.events.FacturaCreada;
 import co.com.sofka.sofkacars.domain.factura.ids.FacturaId;
+import co.com.sofka.sofkacars.usecase.concesionario.CrearFacturaUseCase;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
