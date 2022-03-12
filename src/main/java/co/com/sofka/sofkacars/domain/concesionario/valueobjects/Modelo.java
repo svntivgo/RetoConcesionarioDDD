@@ -8,13 +8,14 @@ import java.util.Objects;
 
 public class Modelo implements ValueObject<Modelo.Properties> {
 
-    private final Date modelo;
+    private final LocalDate modelo;
 
     //Constructor
-    public Modelo(Date modelo) {
-        if (modelo.getYear()<LocalDate.now().getYear())
+    public Modelo(Integer año, Integer mes, Integer dia) {
+        LocalDate fecha = LocalDate.of(año, mes, dia);
+        if (fecha.getYear()<LocalDate.now().getYear())
         {
-            this.modelo = modelo;
+            this.modelo = fecha;
         }
         else {throw new RuntimeException("El modelo aún no está en el mercado");}
 
@@ -22,7 +23,7 @@ public class Modelo implements ValueObject<Modelo.Properties> {
 
     //Interface
     public interface Properties{
-        Date modelo();
+        LocalDate modelo();
     }
 
     // constructor del properties

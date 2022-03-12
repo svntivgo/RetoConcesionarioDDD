@@ -5,13 +5,19 @@ import co.com.sofka.business.repository.DomainEventRepository;
 import co.com.sofka.business.support.RequestCommand;
 import co.com.sofka.domain.generic.DomainEvent;
 import co.com.sofka.sofkacars.domain.concesionario.commands.AniadirAdmin;
+import co.com.sofka.sofkacars.domain.concesionario.commands.AniadirCarro;
 import co.com.sofka.sofkacars.domain.concesionario.events.AdminAniadido;
+import co.com.sofka.sofkacars.domain.concesionario.events.CarroAniadido;
 import co.com.sofka.sofkacars.domain.concesionario.events.ConcesionarioCreado;
-import co.com.sofka.sofkacars.domain.concesionario.ids.AdministradorId;
+import co.com.sofka.sofkacars.domain.concesionario.ids.CarroId;
 import co.com.sofka.sofkacars.domain.concesionario.ids.ConcesionarioId;
+import co.com.sofka.sofkacars.domain.concesionario.valueobjects.Color;
 import co.com.sofka.sofkacars.domain.concesionario.valueobjects.Email;
+import co.com.sofka.sofkacars.domain.concesionario.valueobjects.Marca;
+import co.com.sofka.sofkacars.domain.concesionario.valueobjects.Modelo;
 import co.com.sofka.sofkacars.generics.Identificacion;
 import co.com.sofka.sofkacars.generics.Nombre;
+import co.com.sofka.sofkacars.generics.Precio;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -21,12 +27,13 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 
+import java.time.LocalDate;
 import java.util.List;
 
 
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)
-class AniadirAdminUseCaseTest {
+class AniadirCarroUseCaseTest {
 
     @Mock
     private DomainEventRepository repository;
@@ -35,13 +42,14 @@ class AniadirAdminUseCaseTest {
     void crearAdmin () {
         //arrange
         ConcesionarioId concesionarioId = ConcesionarioId.of("1");
-        AdministradorId administradorId = AdministradorId.of("2");
-        Nombre nombre = new Nombre("Jaa", "Alimaña");
-        Identificacion identificacion = new Identificacion(123456L);
-        Email email = new Email("admin@concesionario.com");
+        CarroId carroId = CarroId.of("2");
+        Marca marca = new Marca(Marca.Value.Mazda);
+        Modelo modelo = new Modelo(2021,03, 03);
+        Color color = new Color(Color.Value.Blanco);
+        Precio precio = new Precio(8000.00);
 
-        var command = new AniadirAdmin(concesionarioId,administradorId,nombre, identificacion, email);
-        var usecase = new AniadirAdminUseCase();
+        var command = new AniadirCarro(concesionarioId,carroId,marca,modelo,color,precio);
+        var usecase = new AniadirCarroUseCase();
 
         Mockito.when(repository.getEventsBy(concesionarioId.value())).thenReturn(historial());
         usecase.addRepository(repository);
@@ -54,12 +62,13 @@ class AniadirAdminUseCaseTest {
                 .getDomainEvents();
 
         //assert
-        var event=(AdminAniadido)events.get(1);
-        Assertions.assertEquals("RetoConcesionarioDDD.AdminAniadido",event.type);
-        Assertions.assertEquals(administradorId,event.getAdministradorId());
-        Assertions.assertEquals(nombre,event.getNombre());
-        Assertions.assertEquals(identificacion,event.getIdentificacion());
-        Assertions.assertEquals(email,event.getEmail());
+        var event=(CarroAniadido)events.get(1);
+        Assertions.assertEquals("RetoConcesionarioDDD.CarroAniadido",event.type);
+        Assertions.assertEquals(carroId,event.getCarroId());
+        Assertions.assertEquals(marca,event.getMarca());
+        Assertions.assertEquals(modelo,event.getModelo());
+        Assertions.assertEquals(color,event.getColor());
+        Assertions.assertEquals(precio,event.getPrecio());
 
 
     }
