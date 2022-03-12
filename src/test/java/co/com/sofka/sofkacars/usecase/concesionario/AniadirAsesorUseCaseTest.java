@@ -69,6 +69,7 @@ class AniadirAsesorUseCaseTest {
 
         return List.of(
                 new ConcesionarioCreado(ConcesionarioId.of("1"))
+
         );
     }
 

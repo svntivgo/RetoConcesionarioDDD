@@ -12,4 +12,8 @@ public class AdminEliminado extends DomainEvent
         this.administradorId = administradorId;
 
     }
+
+    public AdministradorId getAdministradorId() {
+        return administradorId;
+    }
 }
